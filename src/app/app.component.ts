@@ -7,12 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ang-app';
-
-  value = '';
-
-  btnClick(arg: string):void {
-    console.log(arg);
-  }
 }
 
 
