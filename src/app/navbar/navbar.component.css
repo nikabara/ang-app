@@ -3,10 +3,14 @@
   margin: 0px;
   padding: 0px;  
 }
+.main {
+    height: auto;
+    background-color: rgb(245, 241, 241);
+}
 .main-nav {
     width: 100%;
-    height: 120px;
-    border: solid black 1px;
+    height: 100px;
+    background-color: rgb(245, 241, 241);
 
     display: flex;
     align-items: center;
@@ -15,10 +19,11 @@
 a {
     text-decoration: none;
     color: black;
-    border-bottom: none;
 }
-a:hover {
-    border-bottom: solid black 3px;
+.menuOptions:hover {
+    transition: 0.2s;
+    color: none;
+    animation: colorChnage 5s infinite;
 }
 .main-nav-menuOptions {
     display: flex;
@@ -34,4 +39,69 @@ a:hover {
 .logo-title {
     font-size: 25px;
     font-weight: bold;
+
+    letter-spacing: 0px;
+    transition: 0.2s;
+}
+.logo-title:hover {
+    letter-spacing: 2px;
+}
+
+@keyframes colorChnage {
+    0% {
+        color: rgb(49, 117, 181);
+        transition: 0.2s;
+    }
+    20% {
+        color: rgb(102, 36, 173);
+        transition: 0.2s;
+    }
+    40% {
+        color: rgb(145, 26, 78);
+        transition: 0.2s;
+    }
+    60% {
+        color: rgb(30, 158, 128);
+        transition: 0.2s;
+    }
+    80% {
+        color: rgb(180, 189, 55);
+        transition: 0.2s;
+    }
+    100% {
+        color: rgb(87, 127, 167);
+        transition: 0.2s;
+    }
+}
+
+.main-nav-logo {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-content {
+    width: 1000px;
+    height: 500px;
+    max-width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+.main-content-weAre {
+    font-size: 45px;
+    color: rgb(239, 180, 52);
+
+    position: absolute;
+
+    top: 100px;
+    left: 470px;
+}
+.main-content-mekanism {
+    font-size: 200px;
 }
