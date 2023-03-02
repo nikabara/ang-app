@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+
+    font-size:  60px;
+}
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+.resp-overlay-settings {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #d7ae5c;
+
+    position: relative;
+}
+.margined-div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 95%;
+    height: 90%;
+    /* background-color: rgba(240, 248, 255, 0.178); */
+}
