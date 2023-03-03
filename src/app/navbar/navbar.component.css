@@ -98,7 +98,6 @@ a {
     color: rgb(239, 180, 52);
 
     position: absolute;
-
     top: 100px;
     left: 470px;
 
@@ -106,33 +105,76 @@ a {
 }
 .main-content-mekanism {
     font-size: 200px;
-
     pointer-events: none;
 }
+.resp-menu-toggler {
+    display: none;
+}
+.menu-holder {
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: ease-in-out 0.5s;
+}
+
 
 @media (max-width: 1063px) {
-.main-content {
-    width: 500px;
-    height: 300px;
-    max-width: 100%;
-    margin: auto;
+    .main-content {
+        width: 500px;
+        height: 300px;
+        max-width: 100%;
+        margin: auto;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    position: static;
-}
-.main-content-weAre {
-    font-size: 30px;
-    color: #d7ae5c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
     position: static;
+    }
+    .main-content-weAre {
+        font-size: 30px;
+        color: #d7ae5c;
 
-    margin-bottom: -30px;
-}
-.main-content-mekanism {
-    font-size: 100px;
-}
-}
+        position: static;
+
+        margin-bottom: -30px;
+    }
+    .main-content-mekanism {
+        font-size: 100px;
+    }
+    .main-nav-menuOptions {
+        display: none;
+    }
+    .main-nav {
+        width: 100%;
+        height: 100px;
+        background-color: rgb(245, 241, 241);
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .resp-menu-toggler {
+        width: 30px;
+        height: 15px;
+
+        display: inline-block;
+        margin-right: 15px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+    .design-stick-purple {
+        width: 24px;
+        height: 3px;
+        background-color: #FA1681;
+    }
+    .design-stick-cyan {
+        width: 24px;
+        height: 3px;
+        background-color: #74CCDF;
+    }
+}   

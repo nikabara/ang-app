@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  toggle:boolean = false;
+  toggleMenu() {
+    this.toggle = !this.toggle;
+    let toggler:any = document.getElementById("menu-holder-id");
+    if (this.toggle) {
+      toggler.style.transform = "translateX(0%)";
+      toggler.style.overflow = "visible";
+    }
+    else {
+      toggler.style.transform = "translateX(100%)";
+      toggler.style.overflow = "hidden";
+    }
+  }
 }

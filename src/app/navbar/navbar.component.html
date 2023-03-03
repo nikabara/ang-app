@@ -1,3 +1,7 @@
+<div ngClass="menu-holder" id="menu-holder-id">
+    <app-responnsive-navbar-overlay></app-responnsive-navbar-overlay>
+</div>
+
 <div class="main">
     <nav ngClass="main-nav">
         <div ngClass="main-nav-logo">
@@ -12,9 +16,13 @@
             <a href="#" ngClass="menuOptions menuOption6">Contact Us</a>
             <a href="#" ngClass="menuOptions menuOption7">Ground Control</a>
         </div>
+        <div ngClass="resp-menu-toggler" (click)="toggleMenu()">
+            <div ngClass="design-stick-purple"></div>
+            <div ngClass="design-stick-cyan"></div>
+        </div>
     </nav>
-    <div class="main-content">
-        <h2 class="main-content-weAre">We are</h2>
-        <h1 class="main-content-mekanism">Mekanism</h1>
+    <div ngClass="main-content">
+        <h2 ngClass="main-content-weAre">We are</h2>
+        <h1 ngClass="main-content-mekanism">Mekanism</h1>
     </div>
 </div>
