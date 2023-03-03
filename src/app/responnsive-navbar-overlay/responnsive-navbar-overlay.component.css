@@ -3,15 +3,46 @@
     margin: 0;
     padding: 0;
 }
-a {
+.menu-opt-a {
     text-decoration: none;
     color: #ffffff;
 
-    font-size:  60px;
+    font-size: 70px;
+    transition: 0.2s;
+}
+.menu-opt-a:hover {
+    text-decoration: none;
+    color: #000000;
+
+    transition: 0.2s;
 }
 ul {
     text-decoration: none;
     list-style: none;
+}
+.menu-options:not(:last-child) {
+    margin-bottom: -30px;
+}
+.ground-controls-div {
+    margin-top: 20px;
+    width: 290px;
+    height: auto;
+    border-top: solid #ffffff 2px;
+    border-bottom: solid #ffffff 2px;
+
+    display: flex;
+    align-items: center;
+}
+.ground-control-a {
+    font-size: 35px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.2s;
+}
+.ground-control-a:hover {
+    font-size: 35px;
+    text-decoration: none;
+    color: #000000;
 }
 .resp-overlay-settings {
     width: 100vw;
@@ -29,4 +60,20 @@ ul {
     width: 95%;
     height: 90%;
     /* background-color: rgba(240, 248, 255, 0.178); */
+}
+.mekanism-officials-links {
+    margin-top: 30px;
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.bi {
+    font-size: 30px;
+    color: #ffffff;
+    transition: 0.2s;
+}
+.bi:hover {
+    font-size: 30px;
+    color: #000000;
 }
